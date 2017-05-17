@@ -2,7 +2,7 @@
 
 ## Overview
 
-You'll build a small React application where you'll update state in response to an XHR payload and pass props among components to handle updates. 
+You'll build a small React application where you'll update state in response to an XHR payload and pass props among components to handle updates.
 
 ## Animal Shelter
 ![Best Friends](https://media.giphy.com/media/xTiTnz5OOUn49wKbg4/giphy.gif)
@@ -12,6 +12,17 @@ Time to put all of our hard-earned knowledge to the test! This lab is fairly big
 On a high level, you will be working on several components that form the UI of the animal shelter adoption application. Users can filter for pets by type, and can adopt a pet of their choosing. Once a pet is adopted, they cannot un-adopt it. No backsies!
 
 There are several components that need your attention. All of these components can be found in the `components/` folder. Starting with the smallest one and working our way up:
+
+pet properties = {
+  pet: {
+    name:
+    type:
+    age:
+    weight:
+  }
+  isAdopted: y/n
+  onAdoptPet(id)
+}
 
 ### `Pet`
 1. Should have a `pet` prop. Use the attributes in this data to render the pet card correctly. It should show the pet's `name`, `type`, `age` and `weight`. Based on the pet's `gender`, the component also needs to contain either a male (`♂`) or female (`♀`) symbol.
